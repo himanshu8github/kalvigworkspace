@@ -8,6 +8,10 @@ app.http('HelloFunc', {
 
         const name = request.query.get('name') || await request.text() || 'world';
 
-        return { body: `Hello, ${name}!` };
+       
+        context.res = {
+    body: `Hello, ${name}! Welcome to Azure Functions!`
+};
+
     }
 });
