@@ -9,6 +9,7 @@ env:
   AZURE_FUNCTIONAPP_NAME: 'myfuncapp-demo123'   
   AZURE_FUNCTIONAPP_PACKAGE_PATH: './azureModule' 
   NODE_VERSION: '18.x'
+    ACTIONS_STEP_DEBUG: true 
 
 jobs:
   build-and-deploy:
